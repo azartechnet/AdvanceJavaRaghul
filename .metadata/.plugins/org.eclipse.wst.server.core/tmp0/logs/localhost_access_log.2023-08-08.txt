@@ -1,0 +1,12 @@
+127.0.0.1 - - [08/Aug/2023:15:35:30 +0530] "GET / HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [08/Aug/2023:15:35:31 +0530] "GET /ProjectP1/index.html HTTP/1.1" 200 310
+0:0:0:0:0:0:0:1 - - [08/Aug/2023:15:35:31 +0530] "GET /favicon.ico HTTP/1.1" 404 1014
+0:0:0:0:0:0:0:1 - - [08/Aug/2023:15:35:51 +0530] "GET /ProjectP1/Servlet1?uname=admin&pass=admin HTTP/1.1" 200 16
+0:0:0:0:0:0:0:1 - - [08/Aug/2023:15:35:56 +0530] "GET /ProjectP1/Servlet1?uname=admin&pass=adminzzda HTTP/1.1" 200 14
+0:0:0:0:0:0:0:1 - - [08/Aug/2023:15:45:45 +0530] "GET /ProjectP1/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [08/Aug/2023:15:45:52 +0530] "GET /ProjectP1/Servlet1?uname=admin&pass=admin HTTP/1.1" 200 154
+0:0:0:0:0:0:0:1 - - [08/Aug/2023:15:45:58 +0530] "GET /ProjectP1/Servlet1?uname=admin&pass=adminjhjg HTTP/1.1" 200 324
+127.0.0.1 - - [08/Aug/2023:16:12:53 +0530] "GET / HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [08/Aug/2023:16:12:55 +0530] "GET /AdvanceJavaServletConfig/index.jsp HTTP/1.1" 200 221
+0:0:0:0:0:0:0:1 - - [08/Aug/2023:16:12:55 +0530] "GET /favicon.ico HTTP/1.1" 404 1014
+0:0:0:0:0:0:0:1 - - [08/Aug/2023:16:12:58 +0530] "GET /AdvanceJavaServletConfig/Servlet1? HTTP/1.1" 200 42
