@@ -3,14 +3,11 @@
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  * Servlet implementation class Servlet1
@@ -21,23 +18,13 @@ public class Servlet1 extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
-		String u1=req.getParameter("uname");
+		resp.setContentType("text/html");
 		PrintWriter out=resp.getWriter();
-		if(u1.equals("admin"))
-		{
-			HttpSession sess=req.getSession();
-			sess.setAttribute("k1",u1);
-			RequestDispatcher rd=req.getRequestDispatcher("Servlet2");
-			rd.forward(req, resp);
-		}
-		else
-		{
-			//out.println("LoginFail!!!");
-			Cookie ck=new Cookie("e1",u1);
-			resp.addCookie(ck);
-			RequestDispatcher rd=req.getRequestDispatcher("Servlet3");
-			rd.forward(req, resp);
-		}
+		String e1=req.getParameter("email");
+		out.println("<form action='Servlet2' method='get'>");
+		out.println("<input type='hidden' name='em' value='"+e1+"'/>");
+		out.println("<input type='submit' value='ClickHere'/>");
+		out.println("</form>");
 	}
 
 }
